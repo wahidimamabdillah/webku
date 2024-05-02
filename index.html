@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="foto/logo.png">
+</head>
+
+<body>
+    <div style="padding-left:50px;padding-right:50px;background-color: #11235A;">
+        <nav class="menuatas menuatas-expand-lg bg-white menuatas-light sticky-top p-0" id="top">
+            <div class="collapse menuatas-collapse" id="menuatasCollapse">
+                <div class="menuatas-nav p-4 p-lg-0">
+                    <a href="home.html" class="menu-item tombol-link active text-putih"></a>
+                </div>
+                <a href="index.html" class="menu-item tombol-link active btn btn-kuning">Login</a>
+                <br>
+            </div>
+        </nav>
+    </div>
+    <div class="kontainer-xxl py-5" style="background-color: white;">
+        <div class="kontainer">
+            <br>
+            <br>
+            <div class="baris g-5 jarak-items-akhir">
+                <div class="kolom-sedang-5 horizontal-otomatis">
+                    <img class="letak-foto sudut" width="100%" src="foto/login.png">
+                </div>
+                <div class="kolom-sedang-7 horizontal-otomatis">
+                    <h2 class="mb-2">Login</h2>
+                    <form method="post" onsubmit="event.preventDefault(); login();">
+                        <label>Email</label>
+                        <input type="text" name="email" placeholder="Masukkan Email Anda">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Masukkan Password Anda">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kontainer-jarak text-putihabu footer" style="background-color: #FFA33C;">
+        <br>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

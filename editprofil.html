@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="foto/logo.png">
+</head>
+
+<body>
+    <div style="padding-left:50px;padding-right:50px;background-color: #11235A;">
+        <nav class="menuatas menuatas-expand-lg bg-white menuatas-light sticky-top p-0" id="top">
+            <div class="collapse menuatas-collapse" id="menuatasCollapse">
+                <div class="menuatas-nav p-4 p-lg-0">
+                    <a href="home.html" class="menu-item tombol-link active text-putih">Home</a>
+                    <a href="akun.html" class="menu-item tombol-link active text-putih">Akun</a>
+                </div>
+                <a href="index.html" onclick="return confirm('Apakah Anda Yakin Ingin Logout ?')" class="menu-item tombol-link active btn btn-kuning">Logout</a>
+                <br>
+            </div>
+        </nav>
+    </div>
+    <div class="kontainer-xxl" style="background-color: #F1F2F3 !important">
+        <div class="kontainer">
+            <br>
+            <h2 class="mb-4 teks-tengah">Edit Profil</h2>
+            <div class="baris kolom-rata-tengah g-4">
+                <div class="kolom-sedang-6">
+                    <center>
+                        <img src="foto/me.jpg" height="150px" style="border-radius: 10px;">
+                    </center>
+                    <br>
+                    <form method="post" onsubmit="event.preventDefault(); editprofil();">
+                        <label>Nama</label>
+                        <input type="text" name="Nama" placeholder="Masukkan Nama Anda" value="Wahid Imam Abdillah">
+                        <label>Email</label>
+                        <input type="text" name="email" placeholder="Masukkan Email Anda" value="wahidimamabdillah@gmail.com">
+                        <label>No. HP</label>
+                        <input type="number" name="nohp" placeholder="Masukkan No. HP Anda" value="089505424241">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Masukkan Password Baru" value="">
+                        <button type="submit">Simpan</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="kontainer-jarak text-putihabu footer" style="background-color: #FFA33C;">
+        <br>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
